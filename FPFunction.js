@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const loginForm = document.getElementById('loginForm');
     const signupForm = document.getElementById('signupForm');
 
-    // Show Login/Signup Interface when Student or Teacher button is clicked
+   
     studentButton.addEventListener('click', function () {
         mainInterface.style.display = 'none';
         loginSignupContainer.style.display = 'flex';
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		
     });
 
-    // Toggle between Login and Signup forms
+  
     showSignup.addEventListener('click', function (e) {
         e.preventDefault();
         loginForm.style.display = 'none';
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         loginForm.style.display = 'block';
     });
 
-    // Simulate successful login/signup and return to main interface
+  
     const loginButton = document.getElementById('loginButton');
     const signupButton = document.getElementById('signupButton');
 
