@@ -10,6 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Log out functionality
     logoutButton.addEventListener('click', function () {
         alert('Logged out successfully!');
-        window.location.href = 'FirstPage.html'; // Redirect to login page
+        window.location.href = 'index.html'; // Redirect to login page
     });
 });
