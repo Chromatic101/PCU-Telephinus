@@ -18,12 +18,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	const suddenAnnouncementLink = document.querySelector('#menuDropdown a[href="#"]');
 	const logoutLink = document.querySelector('#menuDropdown a[href="#"]:last-child');
 
-    // Go back to the main interface
+   
     backButton.addEventListener('click', function () {
         window.location.href = 'FirstPage.html';
     });
 
-    // Event data
+    
     const events = {
         edsa: {
             title: 'EDSA REVOLUTION',
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
-    // Open modal with event details
+  
     eventButtons.forEach(button => {
         button.addEventListener('click', function () {
             const eventKey = button.getAttribute('data-event');
@@ -55,31 +55,31 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Close modal
+
     closeModal.addEventListener('click', function () {
         modal.style.display = 'none';
     });
 
-    // Close modal when clicking outside
+   
     window.addEventListener('click', function (event) {
         if (event.target === modal) {
             modal.style.display = 'none';
         }
     });
 
-    // Toggle dropdown menu when logo is clicked
+    
     logo.addEventListener('click', function () {
         menuDropdown.style.display = menuDropdown.style.display === 'block' ? 'none' : 'block';
     });
 
-    // Close dropdown when clicking outside
+    
     window.addEventListener('click', function (event) {
         if (event.target !== logo && !menuDropdown.contains(event.target)) {
             menuDropdown.style.display = 'none';
         }
     });
 
-    // Function to generate calendar days
+   
     function generateCalendar(year, month) {
         const firstDay = new Date(year, month, 1);
         const lastDay = new Date(year, month + 1, 0);
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         calendarDays.innerHTML = '';
 
-        // Fill in the days
+       
         for (let i = 0; i < startingDay; i++) {
             calendarDays.innerHTML += '<div></div>';
         }
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Update calendar when month or year changes
+   
     function updateCalendar() {
         const year = parseInt(yearPicker.value);
         const month = parseInt(monthPicker.value);
@@ -107,34 +107,33 @@ document.addEventListener('DOMContentLoaded', function () {
         generateCalendar(year, month);
     }
 
-    // Initialize calendar
+  
     updateCalendar();
 
-    // Add event listeners for month/year picker
+   
     monthPicker.addEventListener('change', updateCalendar);
     yearPicker.addEventListener('change', updateCalendar);
 });
 
 if (profileLink) {
     profileLink.addEventListener('click', function (e) {
-        e.preventDefault(); // Prevent default link behavior
-        window.location.href = 'TPS.html'; // Redirect to Profile page
+        e.preventDefault(); 
+        window.location.href = 'TPS.html'; 
     });
 }
 
-// Redirect to Sudden Announcement page (if needed)
 if (suddenAnnouncementLink) {
     suddenAnnouncementLink.addEventListener('click', function (e) {
-        e.preventDefault(); // Prevent default link behavior
-        alert('Sudden Announcement page is under construction.'); // Placeholder
+        e.preventDefault(); 
+        alert('Sudden Announcement page is under construction.'); 
     });
 }
 
-// Log Out functionality
+
 if (logoutLink) {
     logoutLink.addEventListener('click', function (e) {
-        e.preventDefault(); // Prevent default link behavior
+        e.preventDefault(); 
         alert('Logged out successfully!');
-        window.location.href = 'index.html'; // Redirect to login page
+        window.location.href = 'index.html';
     });
 }
