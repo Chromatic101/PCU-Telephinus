@@ -24,7 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    position: relative; /* Added for dropdown positioning */
+    position: relative; 
 }
 
 header .logo {
@@ -120,12 +120,12 @@ h1 {
     background-color: #82AFC2;
 }
 
-/* Dropdown Menu */
+
 .dropdown {
     display: none;
     position: absolute;
-    top: 50px; /* Adjusted to align below the logo */
-    right: 100px; /* Align to the right of the header */
+    top: 50px; 
+    right: 100px; 
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -152,7 +152,7 @@ h1 {
     color: #333;
 }
 
-/* Modal Styles */
+
 .modal {
     display: none;
     position: fixed;
@@ -180,7 +180,7 @@ h1 {
     cursor: pointer;
 }
 
-/* Mobile-Friendly Adjustments */
+
 @media (max-width: 600px) {
     header .logo {
         width: 100px;
