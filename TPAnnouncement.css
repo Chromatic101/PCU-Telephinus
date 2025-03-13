@@ -60,7 +60,7 @@ button:hover {
     background-color: #82AFC2;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
 
     .announcements-content {
