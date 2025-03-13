@@ -135,6 +135,6 @@ if (logoutLink) {
     logoutLink.addEventListener('click', function (e) {
         e.preventDefault(); // Prevent default link behavior
         alert('Logged out successfully!');
-        window.location.href = 'FirstPage.html'; // Redirect to login page
+        window.location.href = 'index.html'; // Redirect to login page
     });
 }
