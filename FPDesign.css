@@ -21,7 +21,7 @@ body {
 }
 
 header .logo {
-    width: 150px; /* Adjust the size of your logo */
+    width: 150px; 
     margin-bottom: 20px;
 }
 
@@ -56,7 +56,7 @@ footer p {
     margin: 5px 0;
 }
 
-/* Login/Signup Interface Styles */
+
 #loginSignupContainer {
     display: none;
     justify-content: center;
@@ -107,7 +107,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Mobile-Friendly Adjustments */
+
 @media (max-width: 600px) {
     header .logo {
         width: 120px;
